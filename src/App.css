@@ -1,0 +1,112 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 4px solid limegreen;
+  padding: 10px;
+  background: #c7f0c7;
+}
+
+/* ---------- TOP ROW ---------- */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 5px solid blue;
+  padding: 10px;
+ background: lightblue;
+}
+
+.tbox {
+  flex: 10;
+  background: peachpuff;
+  border: 5px solid salmon;
+  height: 80px;
+
+}
+
+.hmiddle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hmiddle .outer {
+  flex: 1;
+  display: flex;
+  background: peachpuff;        
+  border: 5px solid salmon;     
+  padding: 5px;
+ 
+}
+
+.hmiddle .inner {
+  display: flex;
+  border: 5px solid red;
+  background: pink;
+  height: 58px;
+  width: 390px;
+}
+
+.hmiddle .inner div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hmiddle .left-box {
+  border-right: 15px solid red;
+}
+
+/* ---------- MIDDLE CONTENT ---------- */
+.middle {
+  display: flex;
+  gap: 20px;
+}
+
+.mleft {
+  flex: 2;
+  background: lightpink;
+  border: 5px solid brown;
+  height: 200px;
+}
+
+.mright {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mright div {
+  flex: 1;
+  background: lightpink;
+  border: 5px solid brown;
+}
+
+/* ---------- BOTTOM ---------- */
+.bottom {
+  display: flex;
+  gap: 5px;
+  border: 5px solid blue;
+  padding: 10px;
+  background: lightblue;
+}
+
+.bwide {
+  flex: 2;
+  background: lavender;
+  border: 5px solid purple;
+  height: 80px;
+}
+
+.bnarrow {
+  flex: 1;
+  background: peachpuff;
+  border: 5px solid salmon;
+  height: 80px;
+}

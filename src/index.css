@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  font-family: sans-serif;
+}
