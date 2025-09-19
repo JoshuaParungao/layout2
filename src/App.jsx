@@ -1,5 +1,22 @@
-
 import './App.css';
+
+function FooterInfo({ subjCode, section }) {
+  return (
+    <>
+      <div className="bnarrow">{subjCode}</div>
+      <div className="bnarrow">{section}</div>
+    </>
+  );
+}
+
+function HeaderName({ firstName, lastName }) {
+  return (
+    <>
+      <div className="left-box">{firstName}</div>
+      <div className="right-box">{lastName}</div>
+    </>
+  );
+}
 
 function App() {
   return (
@@ -10,8 +27,7 @@ function App() {
         <div className="hmiddle">
           <div className="outer">
             <div className="inner">
-              <div className="left-box"></div>
-              <div className="right-box"></div>
+              <HeaderName firstName="Joshua" lastName="Parungao" />
             </div>
           </div>
         </div>
@@ -30,8 +46,7 @@ function App() {
       {/* Bottom Row */}
       <div className="bottom">
         <div className="bwide"></div>
-        <div className="bnarrow"></div>
-        <div className="bnarrow"></div>
+        <FooterInfo subjCode="PCIT9" section="IT3B" />
         <div className="bwide"></div>
       </div>
     </div>

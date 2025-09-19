@@ -1,4 +1,3 @@
-
 .container {
   display: flex;
   flex-direction: column;
@@ -16,15 +15,14 @@
   gap: 10px;
   border: 5px solid blue;
   padding: 10px;
- background: lightblue;
+  background: lightblue;
 }
 
 .tbox {
-  flex: 10;
+  flex: 1;
   background: peachpuff;
   border: 5px solid salmon;
   height: 80px;
-
 }
 
 .hmiddle {
@@ -37,10 +35,9 @@
 .hmiddle .outer {
   flex: 1;
   display: flex;
-  background: peachpuff;        
-  border: 5px solid salmon;     
+  background: peachpuff;
+  border: 5px solid salmon;
   padding: 5px;
- 
 }
 
 .hmiddle .inner {
@@ -102,11 +99,18 @@
   background: lavender;
   border: 5px solid purple;
   height: 80px;
+  text-align: center;
 }
 
+/* FIX: center text inside footer boxes */
 .bnarrow {
   flex: 1;
   background: peachpuff;
   border: 5px solid salmon;
   height: 80px;
+
+  display: flex;              /* make it flex container */
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  text-align: center;         /* ensure multi-line text is centered too */
 }
